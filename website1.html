@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Integral University</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:url('https://www.iul.ac.in/img/overviewthree.JPG')
+    no-repeat center center/cover;
+    min-height:100vh;
+}
+
+/* Overlay */
+.hero{
+    min-height:100vh;
+    background:rgba(0,0,0,0.55);
+    display:flex;
+    flex-direction:column;
+}
+
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:rgba(0,0,0,0.3);
+    flex-wrap:wrap;
+}
+
+header h1{
+    color:white;
+    font-size:32px;
+}
+
+/* Navigation */
+nav{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#4CAF50;
+}
+
+/* Main Content */
+.content{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:40px 20px;
+}
+
+.content h2{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.content p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+/* Buttons */
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    margin:10px;
+    border-radius:5px;
+    text-decoration:none;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.btn-primary{
+    background:#4CAF50;
+    color:white;
+}
+
+.btn-primary:hover{
+    background:#388E3C;
+}
+
+.btn-secondary{
+    border:2px solid white;
+    color:white;
+}
+
+.btn-secondary:hover{
+    background:white;
+    color:black;
+}
+
+/* Statistics Section */
+.stats{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    flex-wrap:wrap;
+    margin-top:50px;
+    padding:20px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(5px);
+    border-radius:10px;
+}
+
+.stat-box{
+    text-align:center;
+    color:white;
+    min-width:120px;
+}
+
+.stat-box h2{
+    font-size:40px;
+    color:#4CAF50;
+    margin-bottom:10px;
+}
+
+.stat-box p{
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    color:white;
+    padding:15px;
+    background:rgba(0,0,0,0.5);
+}
+
+/* Tablet */
+@media (max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+        padding:15px;
+    }
+
+    nav{
+        justify-content:center;
+    }
+
+    .content h2{
+        font-size:40px;
+    }
+
+    .content p{
+        font-size:18px;
+    }
+
+    .stats{
+        gap:25px;
+    }
+
+    .stat-box h2{
+        font-size:30px;
+    }
+
+    .stat-box p{
+        font-size:16px;
+    }
+}
+
+/* Mobile */
+@media (max-width:480px){
+
+    .content h2{
+        font-size:28px;
+    }
+
+    .content p{
+        font-size:16px;
+    }
+
+    .btn{
+        display:block;
+        width:220px;
+        margin:10px auto;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .stats{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .stat-box h2{
+        font-size:26px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+    <header>
+        <h1>Integral University</h1>
+
+        <nav>
+            <a href="website1.html">Home</a>
+            <a href="website2.html">Courses</a>
+            <a href="website3.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="content">
+
+        <h2>Welcome to Integral University</h2>
+
+        <p>Education For A Brighter Tomorrow</p>
+
+        <div>
+            <a href="website2.html" class="btn btn-primary">
+                Explore Courses
+            </a>
+
+            <a href="website3.html" class="btn btn-secondary">
+                Contact Us
+            </a>
+        </div>
+
+        <!-- Statistics Section -->
+        <div class="stats">
+
+            <div class="stat-box">
+                <h2>20,000+</h2>
+                <p>Students</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>500+</h2>
+                <p>Faculty</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>50+</h2>
+                <p>Programs</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>95%</h2>
+                <p>Placement Rate</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Integral University | All Rights Reserved
+    </footer>
+
+</div>
+
+</body>
+</html>
